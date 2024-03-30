@@ -1,0 +1,85 @@
+.displayProduct{
+display:flex;
+ margin:50px;
+ height:auto;
+ background:white;
+
+}
+.contentImages{
+    width:20%;
+    box-sizing:border-box;
+ 
+  
+}
+.contentImages div{
+    padding:10px;
+}
+.ProductImage{
+    width:40%;
+    height:70vh;
+
+}
+.smallImagesofProduct{
+    border:1px dotted grey;
+}
+.ProductDetails{
+
+    width:40%;
+    
+
+    padding:50px;
+   
+  
+}
+.ProductTitle{
+    color:black;
+    font-size:28px;
+    font-weight:bold;
+ 
+}
+.ProductSize{
+    border:none;
+    width:50px;
+    color:grey;
+    background:white;
+    padding:10px;
+    margin:5px;
+}
+.Size :hover{
+    background:grey;
+    color:white;
+}
+.ProductPrice,.ProductRating, .ProductDescription, .AddToCartProduct{
+       margin:20px;
+}
+
+.cartBodyContent{
+  
+    display:flex;
+   
+    padding:30px;
+    margin-bottom:0px;
+}
+
+.descriptionBtn, .reviewBtn{
+    border:none;
+   
+    color:grey;
+    width:auto;
+    padding:15px 25px;
+     
+   
+}
+.cartBodyContent :hover{
+    background:#E9E8E0;
+    color:black;
+}
+.displayContainer{
+    background:white;
+    width:80%;
+    padding:30px;
+    margin:0px 20px 90px 20px;
+}
+.ReviewsAndShare{
+    background:white;
+}

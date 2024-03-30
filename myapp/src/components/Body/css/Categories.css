@@ -1,0 +1,15 @@
+.Categories accesories {
+  display: flex;
+  flexwrap: wrap;
+  justifycontent: space-between;
+
+  padding: 30px;
+  backgroundcolor: #f5f3eb;
+}
+.Categories1 span {
+  margin: auto;
+  font-size: 17px;
+  display: flex;
+
+  justify-content: center;
+}

@@ -1,0 +1,8 @@
+.categories{
+    display:flex;
+      flex-wrap:wrap;
+    justify-content:space-between;
+    margin-top:100px;
+    padding:30px;
+     background-color:#F5F3EB ;
+}

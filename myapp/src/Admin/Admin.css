@@ -1,0 +1,25 @@
+
+.adminNavbar{
+    display:grid;
+    grid-template-columns:1fr 3fr;
+    height:100vh;
+    
+}
+.adminLinks{
+    display:flex;
+    flex-direction:column;
+    overflow:auto;
+}
+.adminLinks > button{
+    border:none;
+    background:#f2f2f2;
+    padding:5px;
+    border-radius:5px;
+    font-size:14px;
+    text-align:center;
+}
+.adminLinks > button:hover{
+    cursor:pointer;
+    background-color: #dc3545;
+    color:white;
+}

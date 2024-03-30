@@ -1,0 +1,154 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.top-left {
+}
+.container a {
+}
+.App {
+  font-family: "Arial", "Helvetica", sans-serif;
+  background-color: #f5f9fa;
+  overflow-x: hidden;
+}
+.container span {
+  padding-right: 15px;
+}
+
+.Header {
+  display: flex;
+  justify-content: space-around;
+
+  align-items: center;
+  flex-wrap: wrap;
+  background: white;
+}
+.search-dropdown li {
+  list-style: none;
+}
+.Logo-block {
+  height: 110px;
+}
+.logo {
+  width: 300px;
+  height: 90px;
+  padding: 8px;
+}
+.search-field {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  width: 350px;
+  font-size: 17px;
+}
+.search-btn {
+  border: none;
+  color: white;
+  font-weight: bold;
+  background: orange;
+  height: 45px;
+  width: 150px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.Header2 {
+  padding: 0 100px;
+  background-color: #f5f3eb;
+}
+.Header2 button {
+  margin: 20px;
+}
+.searchItems {
+  border: none;
+  background: white;
+  padding: 10px;
+  font-size: 15px;
+}
+.carousel-img {
+  height: 70vh;
+  width: 230vh;
+}
+.body-contact ul {
+  list-style: none;
+  display: flex;
+
+  font-size: 20px;
+}
+.body-contact li {
+  margin: 40px;
+  padding: 10px;
+  border-right: 1px solid;
+}
+.card-body {
+  text-align: center;
+}
+.card-btn {
+  border: none;
+  padding: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.card-btn:hover {
+  background: orange;
+  font-weight: bold;
+  color: white;
+}
+.card {
+  margin: 5px;
+}
+.card:hover {
+  box-shadow: 5px 5px 5px 0px grey;
+}
+.cards-body {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  background: white;
+  padding: 10px;
+}
+.card-body-new-products {
+  display: flex;
+  background: white;
+  flex-wrap: wrap;
+  padding: 40px;
+  justify-content: center;
+  flex-grow: 1;
+}
+.body-contact {
+  background: white;
+  margin-top: 100px;
+  padding: 40px;
+}
+h3 {
+  margin-top: 100px;
+  text-align: center;
+}
+.new-products {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: 100px;
+  padding: 20px;
+  background: white;
+}
+
+.body-carousel {
+  background-image: url("https://static.digit.in/default/9a2979af29d5c5bc767d7dc36e0c328535650868.jpeg");
+  height: 800px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Boucher {
+  margin: 100px;
+  background: white;
+  padding: 30px;
+  text-align: center;
+}
