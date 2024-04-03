@@ -23,9 +23,13 @@ const LoginPAge = () => {
         value.email === loginData.email && value.password === loginData.password
       );
     });
+    
     if (checkedData.length !== 0) {
+      const userName=checkedData[0].email.slice(0,8)
       alert("Login successfully");
-      navigate("/");
+      navigate("/",{state:{
+        name:userName
+      }});
     }
     else{
       alert("username and password doesnot match")

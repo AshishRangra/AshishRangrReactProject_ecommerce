@@ -1,7 +1,20 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 const Header2 = () => {
+  const [name1, setName] = useState("Sign In");
   const navigate = useNavigate();
+  const location = useLocation();
+  const { name } = location.state || { name: "Sign In" };
+  console.log("Email : ", name);
+  useEffect(() => {
+    const { name } = location.state || { name: "Sign In" };
+    console.log("Email : ", name);
+    setName(name);
+  }, [location.state]);
+
+  const changeName = () => {
+    setName("Sign In");
+  };
   return (
     <div>
       <div className="Header2">
@@ -30,12 +43,12 @@ const Header2 = () => {
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="/men">
-                   Men
+                    Men
                   </a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="/women">
-                  Women
+                    Women
                   </a>
                 </li>
                 <li className="nav-item">
@@ -43,7 +56,7 @@ const Header2 = () => {
                     Kids
                   </a>
                 </li>
-              
+
                 <li className="nav-item">
                   <a className="nav-link" href="/about">
                     About Us
@@ -59,14 +72,13 @@ const Header2 = () => {
               id="header-btn1"
               onClick={() => navigate("/login")}
             >
-              Sign In
+              {name1}
             </button>{" "}
-            <button
-              className="search-btn "
-              id="header-btn2"
-              onClick={() => navigate("/Cart")}
-            >
+            <button className="search-btn " onClick={() => navigate("/Cart")}>
               My Cart
+            </button>
+            <button className="search-btn" onClick={() => changeName()}>
+              Log Out{" "}
             </button>
           </div>
         </nav>
