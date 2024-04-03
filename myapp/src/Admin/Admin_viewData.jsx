@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Context } from "../Context/createContext";
-
+import "./css/AdminViewData.css"
 const Admin_viewData = () => {
   const {
     jsonArr,
@@ -25,20 +25,10 @@ const Admin_viewData = () => {
   console.log("jsonArr", jsonArr[selectedOption]);
 
   return (
-    <div className="admin-container">
-      <h1>View Data</h1>
+    <div id="admin-container">
+      {/* <h1 id="heading">View Data</h1> */}
       <div>
-        <table className="admin-table">
-          <thead>
-            <tr>
-              <th>ID</th>
-              <th>Album_id</th>
-              <th>Title</th>
-              <th>Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            <div className="Admin-body">
+      <div  id="option-container">
               <input
                 type="radio"
                 name="options"
@@ -80,7 +70,7 @@ const Admin_viewData = () => {
               />
 
               <label htmlFor="option5">Trending Products</label>
-              <label htmlFor="option4">Carousel Images</label>
+              <br />
               <input
                 type="radio"
                 name="options"
@@ -88,7 +78,8 @@ const Admin_viewData = () => {
                 value={"carouselUrl"}
                 onChange={handleCheckChange}
               />
-               <label htmlFor="option4">Men Products</label>
+          
+                 <label htmlFor="option4">Carousel Images</label>
               <input
                 type="radio"
                 name="options"
@@ -96,7 +87,7 @@ const Admin_viewData = () => {
                 value={"menProducts"}
                 onChange={handleCheckChange}
               />
-               <label htmlFor="option4">Women Products</label>
+              <label htmlFor="option4">Men Products</label>
               <input
                 type="radio"
                 name="options"
@@ -104,20 +95,31 @@ const Admin_viewData = () => {
                 value={"womenProducts"}
                 onChange={handleCheckChange}
               />
-               <label htmlFor="option4">Kids Products</label>
+                <label htmlFor="option4">Women Products</label>
               <input
                 type="radio"
                 name="options"
                 id="option5"
                 value={"kidsProducts"}
                 onChange={handleCheckChange}
-              />
+              /><label htmlFor="option4">Kids Products</label>
             </div>
+        <table id="data-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              
+              <th>Title</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+           
             {jsonArr[selectedOption] &&
               jsonArr[selectedOption].map((value, index) => (
                 <tr key={index}>
                   <td>{value.id}</td>
-                  <td>{value.albumId}</td>
+                  {/* <td>{value.albumId}</td> */}
                   <td>{value.title}</td>
                   <td>
                     <button

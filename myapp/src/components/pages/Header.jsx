@@ -14,11 +14,11 @@ const Header = () => {
     useContext(Context);
   useEffect(() => {
     fetchData("logoUrl");
-  }, [fetchData]);
-  
+  }, []);
+
   return (
-    <div className="stick">
-      <div className="container">
+    <>
+      <div className="container11">
         <div className="top-left">
           <a href="https://www.facebook.com/">
             <FacebookIcon />
@@ -52,10 +52,9 @@ const Header = () => {
           <img
             // src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSnblXz6yWh26Ojn4C71zRX190TXQ2AxjCMQ&usqp=CAU"
             src={
-             jsonArr.logoUrl.length!==0 ?
-              jsonArr.logoUrl &&jsonArr.logoUrl[0].imgSrc:"wait"
-             
-              
+              jsonArr.logoUrl.length !== 0
+                ? jsonArr.logoUrl && jsonArr.logoUrl[0].imgSrc
+                : "wait"
             }
             alt="logo"
             className="logo"
@@ -97,7 +96,7 @@ const Header = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

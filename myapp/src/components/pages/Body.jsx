@@ -21,7 +21,7 @@ const Body = () => {
         setFetchingData(false);
       });
     }
-  }, [fetchData, fetchingData]);
+  }, []);
 
   return (
     <div>
@@ -86,7 +86,7 @@ const Body = () => {
         {jsonArr &&
           jsonArr.Trending_Products_Data.map((item, index) => (
             <div className="col-4" key={index}>
-              <TrendingProducts {...item}  index={index}  />
+              <TrendingProducts {...item} index={index} />
             </div>
           ))}
       </div>

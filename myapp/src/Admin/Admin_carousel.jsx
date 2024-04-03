@@ -1,3 +1,4 @@
+import "./css/AdminViewData.css"
 import React, { useState } from "react";
 
 const Admin_carousel = () => {
@@ -31,9 +32,10 @@ const Admin_carousel = () => {
 
   return (
     <div>
-      Admin_carouselImg
-      <div>
+    
+      <div >
         <form onSubmit={changecarouselImginApi}>
+        <label htmlFor="carouselImg">Carousel-Image</label>
           <input
             type="text"
             name="imgSrc"
@@ -42,8 +44,8 @@ const Admin_carousel = () => {
             onChange={carouselImgChange}
           />
 
-          <label htmlFor="carouselImg">carouselImg URL</label>
-          <button type="submit">Change carouselImg</button>
+        
+          <button type="submit" className="Submitbutton" >Change </button>
         </form>
       </div>
     </div>

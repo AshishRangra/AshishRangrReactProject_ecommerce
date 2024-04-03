@@ -17,6 +17,7 @@ const LoginPAge = () => {
   }, []);
   const LoginSubmit = (e) => {
     e.preventDefault();
+    
     const checkedData = jsonArr.register.filter((value) => {
       return (
         value.email === loginData.email && value.password === loginData.password
@@ -32,7 +33,7 @@ const LoginPAge = () => {
   };
   return (
     <div className="Signin">
-      {" "}
+ 
       <div className="container-sm" id="main">
         <h1>Welcome to Login Page</h1>
         <form onSubmit={LoginSubmit}>

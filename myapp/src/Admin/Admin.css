@@ -1,14 +1,31 @@
+.AdminTop{
+    padding:13px;
+    background:#f2eeee;
+    color:#333;
+    font-weight:bold;
+   
+
+}
 
 .adminNavbar{
     display:grid;
     grid-template-columns:1fr 3fr;
     height:100vh;
-    
+   
+  
+}
+.AdminLeft{
+      background:#f2eeee;
+}
+.AdminRight{
+    padding:30px;
+    background:#fbfbfb;
+   
 }
 .adminLinks{
     display:flex;
     flex-direction:column;
-    overflow:auto;
+   
 }
 .adminLinks > button{
     border:none;

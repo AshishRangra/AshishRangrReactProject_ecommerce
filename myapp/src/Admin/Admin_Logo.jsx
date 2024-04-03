@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Context } from "../Context/createContext";
-
+import "./css/AdminViewData.css"
 const Admin_Logo = () => {
   const [logo, setLogo] = useState({
     logoUrl: "",
@@ -41,9 +41,10 @@ const Admin_Logo = () => {
 
   return (
     <div>
-      Admin_Logo
-      <div>
+     
+      <div >
         <form onSubmit={changeLogoinApi}>
+        <label htmlFor="logo">Logo URL</label>
           <input
             type="text"
             name="logoUrl"
@@ -52,8 +53,8 @@ const Admin_Logo = () => {
             onChange={LogoChange}
           />
 
-          <label htmlFor="logo">Logo URL</label>
-          <button type="submit">Change Logo</button>
+      
+          <button className="Submitbutton" type="submit">Change Logo</button>
         </form>
       </div>
     </div>

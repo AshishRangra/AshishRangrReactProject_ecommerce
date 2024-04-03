@@ -9,7 +9,7 @@ const NewProducts = () => {
   useEffect(() => {
     setFetchingData(true);
     fetchData("New_Products").then(() => setFetchingData(false));
-  }, [fetchData, fetchingData]);
+  }, []);
   return (
     <div>
       <h3>New Products</h3>

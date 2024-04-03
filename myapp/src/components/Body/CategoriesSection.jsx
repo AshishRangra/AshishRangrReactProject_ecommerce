@@ -24,7 +24,7 @@ const Categories = () => {
         setFetchingData(false);
       });
     }
-  }, [fetchData, fetchingData]);
+  }, []);
 
   console.log("JSON Array is : ", jsonArr);
 

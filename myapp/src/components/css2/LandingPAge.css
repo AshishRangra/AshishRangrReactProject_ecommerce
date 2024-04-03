@@ -1,12 +1,12 @@
-.container {
+.container11 {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content:space-around;
+  color:black;
 }
 
-.top-left {
-}
-.container a {
+
+.container11 a {
+  color: #061c34;
 }
 .App {
   font-family: "Arial", "Helvetica", sans-serif;
@@ -42,6 +42,7 @@
   border-radius: 10px;
   width: 350px;
   font-size: 17px;
+
 }
 .search-btn {
   border: none;

@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { Context } from "../Context/createContext";
-
+import "./css/AdminViewData.css"
 const Admin_ChangePass = () => {
   // const navigate = useNavigate();
   const { jsonArr, fetchData } = useContext(Context);
@@ -54,9 +54,9 @@ const Admin_ChangePass = () => {
     })
   };
   return (
-    <div>
-      Admin_ChangePass
-      <div>
+    <div id="container">
+    
+      <div id="form-group">
         <label htmlFor="staticEmail" className="">
           Email
         </label>{" "}
@@ -92,7 +92,7 @@ const Admin_ChangePass = () => {
         />
       </div>
       <div className="d-grid gap-1 col-3 mx-auto">
-        <button className="btn btn-success" onClick={ChangedData}>
+        <button id="change-button" onClick={ChangedData}>
           Change Password
         </button>
       </div>
