@@ -1,20 +1,25 @@
 import React, { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 const Header2 = () => {
-  const [name1, setName] = useState("Sign In");
+  // const [name1, setName] = useState("Sign In");
   const navigate = useNavigate();
   const location = useLocation();
   const { name } = location.state || { name: "Sign In" };
   console.log("Email : ", name);
-  useEffect(() => {
-    const { name } = location.state || { name: "Sign In" };
-    console.log("Email : ", name);
-    setName(name);
-  }, [location.state]);
+  const value = {
+    name: name,
+  };
+  // useEffect(() => {
+  //   const { name } = location.state || { name: "Sign In" };
+  //   console.log("Email : ", name);
+  //   setName(name);
+  // }, [location.state]);
 
   const changeName = () => {
-    setName("Sign In");
+    // setName("Sign In");
+    navigate("/");
   };
+  console.log("Email : ", name);
   return (
     <div>
       <div className="Header2">
@@ -72,7 +77,7 @@ const Header2 = () => {
               id="header-btn1"
               onClick={() => navigate("/login")}
             >
-              {name1}
+              {value.name}
             </button>{" "}
             <button className="search-btn " onClick={() => navigate("/Cart")}>
               My Cart
