@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 const Header2 = () => {
   // const [name1, setName] = useState("Sign In");
